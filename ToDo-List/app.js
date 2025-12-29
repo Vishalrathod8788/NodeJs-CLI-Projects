@@ -39,29 +39,6 @@ const handleInput = (option) => {
       showMenu();
       break;
   }
-  //   if (option === "1") {
-  //     // Add task logic write here
-  //     rl.question("Enter you task : ", (task) => {
-  //       todos.push(task);
-  //       showMenu();
-  //     });
-  //   } else if (option === "2") {
-  //     // view task logic write here
-  //     console.log(" --- Task List --- ");
-  //     todos.forEach((task, index) => {
-  //       console.log(`${index + 1} : ${task}`);
-  //     });
-  //     showMenu();
-  //   } else if (option === "3") {
-  //     // rl close logic write here
-  //     console.log("Good Bye!!");
-
-  //     rl.close();
-  //   } else {
-  //     // handle wrong input
-  //     console.log("please valid option select");
-  //     showMenu();
-  //   }
 };
 
 const showMenu = () => {
