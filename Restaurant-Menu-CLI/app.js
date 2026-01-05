@@ -93,7 +93,6 @@ const orderFromCategory = (categoryKey) => {
       console.log(`Total Amount: ₹${totalBill}`);
       showMenu();
     } else if (index === items.length) {
-      console.log(items.length);
       showMenu();
     } else {
       console.log("Invalid choice. Please select a valid option.");
