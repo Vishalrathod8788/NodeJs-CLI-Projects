@@ -42,7 +42,6 @@ function handleInput(choice) {
 
   switch (choice) {
     case "1":
-      // Full month name (e.g., January)
       console.log(
         `\n📅 Current Month: ${now.toLocaleString("default", {
           month: "long",
@@ -51,7 +50,6 @@ function handleInput(choice) {
       break;
 
     case "2":
-      // Full day name (e.g., Monday)
       console.log(
         `\n📆 Today is: ${now.toLocaleString("default", { weekday: "long" })}`
       );
@@ -62,7 +60,6 @@ function handleInput(choice) {
       break;
 
     case "4":
-      // Format: DD-MM-YYYY
       const day = String(now.getDate()).padStart(2, "0");
       const month = String(now.getMonth() + 1).padStart(2, "0");
       const year = now.getFullYear();
@@ -79,12 +76,10 @@ function handleInput(choice) {
     default:
       console.log("\n❌ Invalid option. Restarting...");
       showMenu();
-      return; // Return taaki niche wala rl.close() na chale
+      return;
   }
 
-  // Challenge requirement: Answer ke baad CLI close ho jaye
   rl.close();
 }
 
-// Start the application
 showMenu();
